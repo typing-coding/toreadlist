@@ -23,7 +23,11 @@ class Detail extends Component {
         }
     }
     componentDidMount(){
-        this.setState({detail: data})
+        fetch('http://localhost:4000/bookdetail?id=1')
+        .then(data => data.json())
+        .then(data=>{
+            this.setState({booklist:data});
+        });
     }
     render(){
         const { detail } = this.state;
