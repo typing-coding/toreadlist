@@ -127,4 +127,12 @@ router.get('/',(req, res) => {
     res.send('Hello World');
 })
 
+router.get('/booklist',(req, res) => {
+    const data = bookdata;
+    res.header("Access-Control-Allow-Origin", "*");
+    res.status(200);
+    res.send(bookdata);
+    res.end();
+})
+
 exports.router = router;
