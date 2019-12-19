@@ -135,4 +135,15 @@ router.get('/booklist',(req, res) => {
     res.end();
 })
 
+router.get('/bookdetail',(req, res) => {
+    const id = req.query.id;
+    const data = bookdata.filter(item=>{
+        return item.id == id;
+    });
+    res.header("Access-Control-Allow-Origin", "*");
+    res.status(200);
+    res.send(data);
+    res.end();
+})
+
 exports.router = router;
