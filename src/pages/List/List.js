@@ -102,7 +102,11 @@ class List extends Component {
         }
     }
     componentDidMount(){
-        this.setState({booklist:data});
+        fetch('http://localhost:4000/booklist')
+        .then(data => data.json())
+        .then(data=>{
+            this.setState({booklist:data});
+        });
     }
     render(){
         const { booklist } = this.state;
