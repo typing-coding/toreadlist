@@ -1,0 +1,10 @@
+.hidden {
+    font-size: 1px;
+    position : absolute;
+    top      : 0;
+    left     : -9999px;
+    overflow : hidden;
+    width    : 1px;
+    height   : 1px;
+    opacity  : 0;
+}
