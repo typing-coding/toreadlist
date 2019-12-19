@@ -139,7 +139,7 @@ router.get('/bookdetail',(req, res) => {
     const id = req.query.id;
     const data = bookdata.filter(item=>{
         return item.id == id;
-    });
+    })[0];
     res.header("Access-Control-Allow-Origin", "*");
     res.status(200);
     res.send(data);
