@@ -1,9 +1,14 @@
 import React, { Component } from 'react'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
+
+import Home from '../pages/Home/Home'
 
 class App extends Component {
     render(){
         return (
-            <h1>Home Page</h1>
+            <Router>
+                <Route key="/" exact path="/" component={Home} />
+            </Router>
         );
     }
 }
