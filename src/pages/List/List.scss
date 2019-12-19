@@ -1,0 +1,45 @@
+.book_breif {
+    position  : relative;
+    display   : block;
+    box-sizing: border-box;
+    padding   : 20px 20px 20px 120px;
+    width     : 100%;
+    cursor    : pointer;
+}
+.book_breif .imgbox {
+    position: absolute;
+    top     : 20px;
+    left    : 20px;
+    overflow: hidden;
+    width   : 80px;
+    height  : 120px;
+    border  : 1px solid #d0d0d0;
+}
+.book_breif .book_info {
+    position      : relative;
+    box-sizing    : border-box;
+    padding-bottom: 30px;
+    min-height    : 120px;
+}
+.book_breif .book_info .book_title {
+    color    : #323232;
+    font-size: 18px;
+}
+.book_breif .book_info .book_subtitle {
+    padding-top: 5px;
+    color      : #707070;
+    font-size  : 14px;
+}
+.book_breif .book_info .book_stars {
+    position: absolute;
+    bottom  : 0;
+    left    : 0;
+}
+.star {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/747/star.svg);
+    background-size: 100%;
+}

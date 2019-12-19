@@ -1,0 +1,106 @@
+.detail_view {
+    position  : relative;
+    width     : 100%;
+    background: #fff;
+}
+.basic_column {
+    position   : relative;
+    padding-top: 200px;
+}
+.detail_view .detail_img .detail_img {
+    height: 200px;
+}
+.detail_view .detail_img .imgbox {
+    position  : absolute;
+    top       : 0;
+    left      : 0;
+    overflow  : hidden;
+    box-sizing: border-box;
+    width     : 100%;
+    height    : 200px;
+    border    : none;
+    background: #f0f0f0;
+}
+.detail_view .detail_img .imgbox img {
+    position: absolute;
+    top     : 50%;
+    right   : 0;
+    left    : 0;
+}
+.detail_view .detail_img .imgbox img {
+    transform: translateY(-50%);
+}
+.detail_view .detail_column {
+    transform: translateY(0);
+}
+.detail_view .detail_column.basic_info_column {
+    padding-top: 0;
+    background : #f0f0f0;
+}
+.detail_view .detail_column.my_comment_column {
+    background: #f0f0f0;
+}
+.detail_view .detail_title {
+    color    : #323232;
+    font-size: 18px;
+}
+.detail_view .detail_subtitle {
+    padding-top: 5px;
+    color      : #707070;
+    font-size  : 14px;
+}
+.detail_view .detail_stars {
+    padding-top: 10px;
+}
+.detail_view .basic_info_column dl {
+    padding-top: 5px;
+}
+.detail_view .basic_info_column dl:first-child {
+    padding-top: 0;
+}
+.detail_view .basic_info_column dl:after {
+    display: block;
+    clear  : both;
+    content: "";
+}
+.detail_view .basic_info_column dl dt {
+    float    : left;
+    color    : #707070;
+    font-size: 14px;
+}
+.detail_view .basic_info_column dl dt:after {
+    padding-right: 10px;
+    padding-left : 10px;
+    content      : ":";
+}
+.detail_view .basic_info_column dl dd {
+    float    : left;
+    color    : #707070;
+    font-size: 14px;
+}
+.detail_view .description_column {
+    position      : relative;
+    overflow      : hidden;
+    box-sizing    : border-box;
+    padding-bottom: 40px;
+    height        : 100px;
+}
+.detail_view .description_column .main_title {
+    padding-bottom: 10px;
+    color         : #707070;
+    font-size     : 14px;
+}
+.detail_view .description_column .btn_detail_more {
+    position: absolute;
+    bottom  : 0;
+    left    : 0;
+    width   : 100%;
+}
+.detail_view .detail_description {
+    color    : #707070;
+    font-size: 14px;
+}
+.detail_view .detail_comment {
+    color    : #707070;
+    font-size: 14px;
+}
