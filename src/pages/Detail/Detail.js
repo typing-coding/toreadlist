@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import './Detail.scss'
 
 const data = {
-    'images' : 'https://bookthumb-phinf.pstatic.net/cover/145/943/14594377.jpg?type=m140&udate=20191217',
+    'images' : 'https://image.aladin.co.kr/product/18456/45/cover500/s382636510_1.jpg',
     'title': '팩트풀니스',
     'subtitle': '우리가 세상을 오해하는 10가지 이유와 세상이 생각보다 괜찮은 이유',
     'star': '5',
@@ -16,7 +16,17 @@ const data = {
 };
 
 class Detail extends Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            detail: {}
+        }
+    }
+    componentDidMount(){
+        this.setState({detail: data})
+    }
     render(){
+        const { detail } = this.state;
         return (
             <div className="wrap">
                 <header className="header">
@@ -28,13 +38,13 @@ class Detail extends Component {
                         <section className="detail_column basic_column">
                             <h2 className="hidden">기본 책 정보</h2>
                             <div className="detail_img">
-                                <div className="imgbox"><img src="" alt="" /></div>
+                                <div className="imgbox"><img src={detail.images} alt="" /></div>
                             </div>
                             <div className="box_area">
-                                <h2 className="detail_title">제목</h2>
-                                <p className="detail_subtitle">부제목</p>
+                                <h2 className="detail_title">{detail.title}</h2>
+                                <p className="detail_subtitle">{detail.subtitle}</p>
                                 <div className="detail_stars">
-                                    <span className="star"></span><span className="star"></span><span className="star"></span>
+                                    <span className="star"></span><span className="star"></span><span className="star"></span><span className="star"></span><span className="star"></span>
                                 </div>
                             </div>
                         </section>
@@ -43,15 +53,15 @@ class Detail extends Component {
                             <div className="box_area">
                                 <dl>
                                     <dt>지은이</dt>
-                                    <dd>지은이 이름</dd>
+                                    <dd>{detail.author}</dd>
                                 </dl>
                                 <dl>
                                     <dt>출판사</dt>
-                                    <dd>출판사 이름</dd>
+                                    <dd>{detail.publisher}</dd>
                                 </dl>
                                 <dl>
                                     <dt>출판연도</dt>
-                                    <dd>0000</dd>
+                                    <dd>{detail.pubdate}</dd>
                                 </dl>
                             </div>
                         </section>
@@ -59,7 +69,7 @@ class Detail extends Component {
                             <div className="box_area">
                                 <h2 className="main_title">책 설명</h2>
                                 <p className="detail_description">
-                                    책 설명 TEXT
+                                    {detail.description}
                                 </p>
                             </div>
                         </section>
@@ -67,7 +77,7 @@ class Detail extends Component {
                             <h2 className="hidden">책 감상</h2>
                             <div className="box_area">
                                 <p className="detail_comment">
-                                    책 감상 코멘트
+                                    {detail.comment}
                                 </p>
                             </div>
                         </section>
