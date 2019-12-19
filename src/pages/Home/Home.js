@@ -10,7 +10,7 @@ class Home extends Component {
             <div className="wrap">
                 <div className="main_page">
                     <h1 className="logo">
-                        <Link to="/List">
+                        <Link to="/list">
                             <span className="text" ref="text">TO</span>
                             <span className="br"></span>
                             <span className="text">
