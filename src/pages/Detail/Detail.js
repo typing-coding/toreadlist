@@ -3,6 +3,18 @@ import { Link } from 'react-router-dom'
 
 import './Detail.scss'
 
+const data = {
+    'images' : 'https://bookthumb-phinf.pstatic.net/cover/145/943/14594377.jpg?type=m140&udate=20191217',
+    'title': '팩트풀니스',
+    'subtitle': '우리가 세상을 오해하는 10가지 이유와 세상이 생각보다 괜찮은 이유',
+    'star': '5',
+    'author': '한스 로슬링',
+    'publisher': '김영사',
+    'pubdate': '20190310',
+    'description': '전 세계 100만부 돌파 세계 지성계를 사로잡은 글로벌 베스트셀러 마침내 출간 <br />전 세계적으로 확증편향이 기승을 부리는 탈진실의 시대에, 막연한 두려움과 편견을 이기는 팩트의 중요성을 일깨우는 세계적 역작',
+    'comment': '세상을 정확히 분석하는 여러 방식을 배울 수 있는 좋은 책'
+};
+
 class Detail extends Component {
     render(){
         return (
