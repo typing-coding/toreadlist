@@ -15,6 +15,9 @@
     height  : 120px;
     border  : 1px solid #d0d0d0;
 }
+.book_breif .imgbox img {
+    max-width: 100%;
+}
 .book_breif .book_info {
     position      : relative;
     box-sizing    : border-box;
