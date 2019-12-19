@@ -3,10 +3,7 @@ const express = require('express');
 const server = express();
 const port = 4000;
 
-const router = express.Router();
-router.get('/',(req, res) => {
-    res.send('Hello World');
-})
+const {router} = require('./router/router.js');
 
 server.use(router);
 
