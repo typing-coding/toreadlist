@@ -1,0 +1,38 @@
+.main_page {
+    position   : relative;
+    overflow   : hidden;
+    box-sizing : border-box;
+    height     : 100vh;
+    background : #3087e9;
+}
+.main_page .logo {
+    position : absolute;
+    bottom   : 36px;
+    left     : 36px;
+    color    : #fff;
+    font-size: 60px;
+}
+.main_page .logo a {
+    display: block;
+}
+.main_page .logo .br {
+    display: block;
+    margin : 10px;
+}
+.main_page .logo .text {
+    position: relative;
+    display : block;
+    overflow: hidden;
+}
+.main_page .logo .text .do {
+    position : absolute;
+    top      : 0;
+    left     : 0;
+    opacity  : 0;
+    transform: translateY(-100%);
+}
+.main_page .logo .text .read {
+    position: relative;
+    display : inline-block;
+    opacity : 1;
+}
