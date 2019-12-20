@@ -11,7 +11,7 @@ class App extends Component {
             <Router>
                 <Route key="/" exact path="/" component={Home} />
                 <Route key="/list" exact path="/list" component={List} />
-                <Route key="/detail" exact path="/detail" component={Detail} />
+                <Route key="/detail" exact path="/detail/:id" component={Detail} />
             </Router>
         );
     }
