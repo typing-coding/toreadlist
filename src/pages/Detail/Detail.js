@@ -42,7 +42,7 @@ class Detail extends Component {
                         <section className="detail_column basic_column">
                             <h2 className="hidden">기본 책 정보</h2>
                             <div className="detail_img">
-                                <div className="imgbox"><img src={detail.images} alt="" /></div>
+                                <div className="imgbox"><img src={detail.bigimages} alt="" /></div>
                             </div>
                             <div className="box_area">
                                 <h2 className="detail_title">{detail.title}</h2>
