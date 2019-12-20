@@ -30,7 +30,7 @@ class List extends Component {
                         {
                             booklist.map((item,index)=>(
                                     <li key={`booklist${index}`}>
-                                        <Link to="/detail" className="book_breif">
+                                        <Link to={`/detail/${index+1}`} className="book_breif">
                                             <div className="imgbox"><img src={item.images} alt="" /></div>
                                             <div className="book_info">
                                                 <p className="book_title">{item.title}</p>
