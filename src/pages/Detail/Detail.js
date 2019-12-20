@@ -23,7 +23,8 @@ class Detail extends Component {
         }
     }
     componentDidMount(){
-        fetch('http://localhost:4000/bookdetail?id=1')
+        const index = this.props.match.params.id;
+        fetch(`http://localhost:4000/bookdetail?id=${index}`)
         .then(data => data.json())
         .then(data=>{
             this.setState({detail:data});
